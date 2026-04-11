@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Currículo</title>
 </head>
+<style>
+    body {
+        font-family: Arial;
+    }
+
+    .botao {
+        display: block;
+        width: 200px;
+        margin: 10px auto;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #eee;
+        color: #333;
+        border-radius: 5px;
+    }
+</style> <!-- Código simples em CSS feito pesquisando na Internet -->
+
 <body>
 
     <table>
         <thead>
             <tr>
-                <th><a href="./index.html">Página inicial</a></th>
                 <th></th>
-                <th><a href="./pag_servicos.html">Serviços</a></th>
-                <th><a href="./pag_github.html">GitHub</a></th>
-                <th><a href="./pag_curriculo.html">Currículo</a></th>
-                <th><a href="./pag_contato.html">Contatos</a></th>
+                <th></th>
+                <th><a href="./index.html" class="botao">Página Inicial</a></th>
+                <th><a href="./pag_servicos.html" class="botao">Serviços</a></th>
+                <th><a href="./pag_github.html" class="botao">GitHub</a></th>
+                <th><a href="./pag_curriculo.html" class="botao">Currículo</a></th>
+                <th><a href="./pag_contato.html" class="botao">Contato</a></th>
             </tr>
         </thead>
     </table>
-    <h1>Meu Currículo</h1>    
+    <h1 style="text-align: center;">Meu Currículo</h1>
 
     <h2>Dados Pessoais</h2>
     <ul>
@@ -31,8 +51,9 @@
     </ul>
 
     <h2>Objetivos Pessoais</h2>
-    <p>Atuar na área de <mark style="background-color:rgba(0, 140, 255, 0.747)"> desenvolvimento de software</mark>, com foco em desenvolvimento web, 
-    buscando evoluir como desenvolvedor fullstack e contribuir com soluções tecnológicas eficientes.</p>
+    <p>Atuar na área de <mark style="background-color:rgba(0, 140, 255, 0.747)"> desenvolvimento de software</mark>, com
+        foco em desenvolvimento web,
+        buscando evoluir como desenvolvedor fullstack e contribuir com soluções tecnológicas eficientes.</p>
 
     <h2>Formação Acadêmica</h2>
     <table border="">
@@ -95,13 +116,19 @@
         <li>Tráfego Pago</li>
         <li>Python</li>
         <li>HTML</li>
-        
+
     </ul>
 
     <p>Aprendi o básico de Lógica de Programação com esse vídeo:</p>
     <video poster="./IMG/thumb_video.jpeg" controls autoplay>
-            <source src="./VIDEO/logicaprogramacao.mp4" type="video/mp4">
-        </video>
+        <source src="./VIDEO/logicaprogramacao.mp4" type="video/mp4">
+    </video>
+
+    <p>Caso tenha interesse, pode fazer o <b>download</b> do meu currículo <a href="./IMG/curriculo.jpg"><b><i>clicando
+                    aqui</i></b></a>.</p>
+
+    <a href="./index.html" class="botao"><img src="./IMG/voltar.png" alt="Voltar" width="10%">Voltar</a>
 
 </body>
+
 </html>

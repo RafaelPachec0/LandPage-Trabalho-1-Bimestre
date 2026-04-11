@@ -6,27 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página inicial</title>
 </head>
+<style>
+    body {
+        font-family: Arial;
+    }
+
+    .botao {
+        display: block;
+        width: 200px;
+        margin: 10px auto;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #eee;
+        color: #333;
+        border-radius: 5px;
+    }
+</style> <!-- Código simples em CSS feito pesquisando na Internet -->
 
 <body>
+
     <table>
         <thead>
             <tr>
                 <th></th>
                 <th></th>
-                <th><a href="./pag_servicos.html">Serviços</a></th>
-                <th><a href="./pag_github.html">GitHub</a></th>
-                <th><a href="./pag_curriculo.html">Currículo</a></th>
-                <th><a href="./pag_contato.html">Contatos</a></th>
+                <th><a href="./index.html" class="botao">Página Inicial</a></th>
+                <th><a href="./pag_servicos.html" class="botao">Serviços</a></th>
+                <th><a href="./pag_github.html" class="botao">GitHub</a></th>
+                <th><a href="./pag_curriculo.html" class="botao">Currículo</a></th>
+                <th><a href="./pag_contato.html" class="botao">Contato</a></th>
             </tr>
         </thead>
     </table>
-    <h1>Página inicial</h1>
-    <h2>Sobre Mim</h2>
-    <img width="150" src="./IMG/Foto.jpeg" alt="Foto de Rafael Pacheco">
+
+    <h1 style="text-align: center;">Página inicial</h1>
+
+    <h2 style="color: darkblue;">Sobre mim</h2>
+
+    <img width="150" src="../IMG/Foto.jpeg" alt="Foto de Rafael Pacheco">
+
     <p>Meu nome é <strong>Rafael da Silva Pacheco</strong>, nasci em <a href="https://shre.ink/LL0J">Campo Grande -
             MS</a> e por volta dos meus 10 anos eu me mudei
         para <a href="https://shre.ink/LL0Y">Vila Velha - ES</a>. </p>
-    <h3>Experiências</h3>
+    <h3>&rarr; Experiências &larr;</h3>
     <p>Já tentei diversas coisas, desde criar um e-commerce, ser um produtor musical,
         fazer investimentos em Renda Fixa, Ações e Fundos Imobiliários (coisa que faço até hoje), ser gestor de tráfego,
         mas todos tendo uma coisa em comum, a Internet, que é uma área que sempre fui gostei muito, e então surgiu o
@@ -43,25 +66,24 @@
         <li>Lógica de Programação e Computação</li>
         <li>Instalação e Manutenção de Computadores</li>
     </ul>
-</p>
+    </p>
     <hr>
 
     <h2>Hobbies</h2>
     <ul type="square">
-        <li>Jogar Videogames</li>
-        <li>Assistir Animes</li>
-        <li>Ler Livros</li>
-        <li>Escutar Trilhas Sonoras</li>
-        <li>Exercícios Físicos</li>
-        <li>Estudar Linguagens de Programação</li>
-        <li>Explorar Novas Ferramentas</li>
+        <li>Jogar Videogames &#x1F579</li>
+        <li>Assistir Animes &#x1F4FA</li>
+        <li>Ler Livros &#x1F4D6</li>
+        <li>Escutar Trilhas Sonoras &#x1F3B5</li>
+        <li>Exercícios Físicos &#x1F646</li>
+        <li>Estudar Linguagens de Programação &#x1F5A5</li>
+        <li>Explorar Novas Ferramentas &#x1F9D0</li>
     </ul>
 
     <p>Essa é uma das trilhas sonoras do jogo <i>Clair Obscur: Expedition 33</i> que gosto de escutar frequentemente</p>
-    <audio preload="metadata" controls autoplay loop
-        source src="./AUDIO/trilhasonora_e33.mp3" type="audio/mpeg">
-    <p>Seu navegador não suporta o áudio <a href="midia/trilhasonora_e33.mp3"
-        download="trilhasonora_e33.mp3" type="audio/mpeg"> aqui </a></p>
+    <audio preload="metadata" controls autoplay loop source src="./AUDIO/trilhasonora_e33.mp3" type="audio/mpeg">
+        <p>Seu navegador não suporta o áudio <a href="midia/trilhasonora_e33.mp3" download="trilhasonora_e33.mp3"
+                type="audio/mpeg"> aqui </a></p>
     </audio>
 
     <hr>
@@ -90,21 +112,24 @@
                     <ul>
                         <li>EEEM Professor Agenor Roris - Vila Velha
                             <br>
-                            <img src="./IMG/agenorroris.jpg" width="100" alt=""></li>
+                            <img src="./IMG/agenorroris.jpg" width="100" alt="">
+                        </li>
                     </ul>
                 </td>
                 <td>
                     <ul>
                         <li>CEET Vasco Coutinho - Vila Velha
                             <br>
-                            <img src="./IMG/vascocoutinho.jpeg" width="100" alt=""></li>
+                            <img src="./IMG/vascocoutinho.jpeg" width="100" alt="">
+                        </li>
                     </ul>
                 </td>
                 <td>
                     <ul>
                         <li>Universidade Vila Velha (UVV) - Vila Velha
                             <br>
-                            <img src="./IMG/uvv.jpg" width="100" alt=""></li>
+                            <img src="./IMG/uvv.jpg" width="100" alt="">
+                        </li>
                     </ul>
                 </td>
                 <td>
@@ -118,7 +143,7 @@
     <hr>
     <h2>Eventos</h2>
     <p>Participei de algumas palestras, a mais recente sendo uma que teve no Palácio Anchieta sobre o futuro
-    da ciência e tecnologia no Espírito Santo</p>
+        da ciência e tecnologia no Espírito Santo</p>
     <hr>
     <h2>Matérias da Faculdade</h2>
     <table border="2">
@@ -149,17 +174,23 @@
             </tr>
             <tr>
                 <td>Fabricio Ribeiro Ferreira</td>
-                <td>Desenvolvimento de sites com HTML, elementos dinâmicos com CSS e JavaScript, introdução a Nodes.JS.</td>
+                <td>Desenvolvimento de sites com HTML, elementos dinâmicos com CSS e JavaScript, introdução a Nodes.JS.
+                </td>
                 <td>Renato Sousa Botacim</td>
-                <td>Entender conceitos fundamentais de banco de dados, a importância deles para tomadas de decisões em negócios, como modelar, projetar e implementar os conceitos em uma SGBD.</td>
+                <td>Entender conceitos fundamentais de banco de dados, a importância deles para tomadas de decisões em
+                    negócios, como modelar, projetar e implementar os conceitos em uma SGBD.</td>
                 <td>Susiléa Abreu dos Santos Lima</td>
-                <td>Compreender conceitos sobre experiência do usuário, analisar a experiência e usabilidade de produtos de softwawre, conhecer aspectos da psicologia cognitiva e conceitos de design system.</td>
+                <td>Compreender conceitos sobre experiência do usuário, analisar a experiência e usabilidade de produtos
+                    de softwawre, conhecer aspectos da psicologia cognitiva e conceitos de design system.</td>
                 <td>Edgar Segundo Monteiro</td>
-                <td>Resolução de problemas com e sem código, pensamento computacional, fundamentos da programação, liguagens de programação C e Python, uso de Banco de Dados e SQL.</td>
+                <td>Resolução de problemas com e sem código, pensamento computacional, fundamentos da programação,
+                    liguagens de programação C e Python, uso de Banco de Dados e SQL.</td>
                 <td>Erlon Primeiro</td>
-                <td>Raciocínio lógico na solução de problemas, proposições, conectivos, álgebra booleana, desenvolvimento do raciocínio lógico matemático.</td>
+                <td>Raciocínio lógico na solução de problemas, proposições, conectivos, álgebra booleana,
+                    desenvolvimento do raciocínio lógico matemático.</td>
                 <td>Maria Aparecida Javarini Bitte</td>
-                <td>Ambientar estudantes no mundo acadêmico, conhecimento científico, escrita acadêmica, extensão universitária</td>
+                <td>Ambientar estudantes no mundo acadêmico, conhecimento científico, escrita acadêmica, extensão
+                    universitária</td>
             </tr>
         </tbody>
     </table>
@@ -175,7 +206,10 @@
         sem a necessidade de copiar a imagem e colar ela em algum tradutor ou traduzir palavra por palavra.
     </p>
     <p>Esse vídeo me ajudou a me dar um norte no que eu quero fazer dentro da TI</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/rkYTCjhtRy0?si=59jOH4hmgFdI5bDN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rkYTCjhtRy0?si=59jOH4hmgFdI5bDN"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 </body>
 

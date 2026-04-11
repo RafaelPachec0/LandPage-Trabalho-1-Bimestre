@@ -1,25 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Contato</title>
 </head>
+<style>
+    body {
+        font-family: Arial;
+    }
+
+    .botao {
+        display: block;
+        width: 200px;
+        margin: 10px auto;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #eee;
+        color: #333;
+        border-radius: 5px;
+    }
+</style> <!-- Código simples em CSS feito pesquisando na Internet -->
+
 <body>
 
     <table>
         <thead>
             <tr>
-                <th><a href="./index.html">Página inicial</a></th>
                 <th></th>
-                <th><a href="./pag_servicos.html">Serviços</a></th>
-                <th><a href="./pag_github.html">GitHub</a></th>
-                <th><a href="./pag_curriculo.html">Currículo</a></th>
-                <th><a href="./pag_contato.html">Contatos</a></th>
+                <th></th>
+                <th><a href="./index.html" class="botao">Página Inicial</a></th>
+                <th><a href="./pag_servicos.html" class="botao">Serviços</a></th>
+                <th><a href="./pag_github.html" class="botao">GitHub</a></th>
+                <th><a href="./pag_curriculo.html" class="botao">Currículo</a></th>
+                <th><a href="./pag_contato.html" class="botao">Contato</a></th>
             </tr>
         </thead>
-    </table>
-    <h1>Contato</h1>
+    </table>>Contato</h1>
 
     <p>Preencha essas informações para eu poder entrar em contato com você!</p>
 
@@ -29,17 +48,17 @@
 
             <tr>
                 <td><label for="nome">Nome Completo:</label></td>
-                <td><input type="text" id="nome" name="nome"></td>
+                <td><input type="text" id="nome" name="nome" required></td>
             </tr>
 
             <tr>
                 <td><label for="tel">Telefone:</label></td>
-                <td><input type="tel" id="tel" name="tel"></td>
+                <td><input type="tel" id="tel" name="tel" required></td>
             </tr>
 
             <tr>
                 <td><label for="email">Email:</label></td>
-                <td><input type="email" id="email" name="email"></td>
+                <td><input type="email" id="email" name="email" required></td>
             </tr>
 
             <tr>
@@ -56,6 +75,11 @@
             </tr>
 
             <tr>
+                <td><label for="data">Data desejada:</label></td>
+                <td><input type="date" id="data" name="data"></td>
+            </tr>
+
+            <tr>
                 <td>Tipo de serviço:</td>
                 <td>
                     <input type="checkbox" name="html"> HTML <br>
@@ -65,12 +89,31 @@
             </tr>
 
             <tr>
-                <td>Descrição:</td>
+                <td><label for="servico">Serviço principal:</label></td>
                 <td>
-                    <textarea name="descricao" cols="40" rows="5"></textarea>
+                    <select name="servico" id="servico">
+                        <option value="">Selecione</option>
+                        <option value="simples">Site Simples</option>
+                        <option value="dinamico">Site Dinâmico</option>
+                        <option value="avancado">Site Avançado</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Como me conheceu?</td>
+                <td>
+                    <input type="radio" name="origem" value="google"> Google <br>
+                    <input type="radio" name="origem" value="indicacao"> Indicação <br>
+                    <input type="radio" name="origem" value="redes"> Redes Sociais
                 </td>
             </tr>
 
+            <tr>
+                <td>Descrição:</td>
+                <td>
+                    <textarea name="descricao" cols="40" rows="5" placeholder="Descreva seu projeto"></textarea>
+                </td>
+            </tr>
             <tr>
                 <td colspan="2">
                     <input type="submit" value="Enviar">
@@ -82,43 +125,7 @@
 
     </form>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <a href="./index.html" class="botao"><img src="./IMG/voltar.png" alt="Voltar" width="10%">Voltar</a>
 
 </body>
 
