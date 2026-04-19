@@ -1,0 +1,16 @@
+body {
+    font-family: Arial;
+    background-color:aliceblue;
+}
+
+.botao {
+    display: block;
+    width: 200px;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 5px;
+} /*Código simples em CSS feito pesquisando na Internet*\
